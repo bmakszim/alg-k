@@ -10,7 +10,7 @@ public class Main {
 
         while (t-- > 0) {
             char[] k = br.readLine().trim().toCharArray();
-            bw.write(findNextPalindrome(k) + "\n");
+            bw.write(findNextPalindrome(k) + "\n");  // Find the next palindrome for each k input
         }
 
         bw.flush();
@@ -18,7 +18,7 @@ public class Main {
         br.close();
     }
 
-    private static String findNextPalindrome(char[] k) {
+    static String findNextPalindrome(char[] k) {
         int n = k.length;
         char[] result = new char[n];
 
